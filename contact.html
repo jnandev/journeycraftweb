@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Journey Craft</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fonts -->
+    <link rel="stylesheet" href="font/fonts.css" />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/utility.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- navbar  -->
+    <nav class="navbar">
+      <div class="container flex">
+        <a href="index.html" class="site-brand"> Journey<span>Craft</span> </a>
+
+        <button type="button" id="navbar-show-btn" class="flex">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div id="navbar-collapse">
+          <button type="button" id="navbar-close-btn" class="flex">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">Login</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="index.html"
+                class="nav-link"
+                onclick="window.open('file:///C:/Users/Home/Downloads/fwd%20project-20241231T025432Z-001/fwd%20project/index.html')"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="gallery.html"
+                class="nav-link"
+                onclick="window.open('file:///C:/Users/Home/Downloads/fwd%20project-20241231T025432Z-001/fwd%20project/gallery.html')"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="packages.html"
+                class="nav-link"
+                onclick="window.open('file:///C:/Users/Home/Downloads/fwd%20project-20241231T025432Z-001/fwd%20project/packages.html')"
+                >Packages</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="book.html"
+                class="nav-link"
+                onclick="window.open('file:///C:/Users/Home/Downloads/fwd%20project-20241231T025432Z-001/fwd%20project/book.html')"
+                >Book</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="contact.html"
+                class="nav-link"
+                onclick="window.open('file:///C:/Users/Home/Downloads/fwd%20project-20241231T025432Z-001/fwd%20project/contact.html')"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar  -->
+
+    <!-- header -->
+    <header class="flex header-sm">
+      <div class="container">
+        <div class="header-title">
+          <h1>Contact</h1>
+          <p>
+            Get in touch with us for any questions, feedback, or inquiries.
+            We're here to help and make your travel planning easier! Reach out
+            via the form or through our contact details below.
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- header -->
+
+    <!-- contact section -->
+    <section id="contact" class="py-4">
+      <div class="container">
+        <div class="title-wrap">
+          <span class="sm-title">get in touch with us</span>
+          <h2 class="lg-title">contact us</h2>
+        </div>
+
+        <div class="contact-row">
+          <div class="contact-left">
+            <form class="contact-form" method="post" action="/conatus">
+              <input type="text" class="form-control" placeholder="Your name" />
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Your email"
+              />
+              <textarea
+                rows="4"
+                class="form-control"
+                placeholder="Your message"
+                style="resize: none"
+              ></textarea>
+              <input type="submit" class="btn" value="Send message" />
+            </form>
+          </div>
+          <div class="contact-right my-2">
+            <div class="contact-item">
+              <span class="contact-icon flex">
+                <i class="fa fa-phone-alt"></i>
+              </span>
+              <div>
+                <span>Phone</span>
+                <p class="text">+91-613209854</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon flex">
+                <i class="fa fa-map-marked-alt"></i>
+              </span>
+              <div>
+                <span>Address</span>
+                <p class="text">
+                  12th Main Road, Indiranagar, Bangalore, Karnataka
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon flex">
+                <i class="fa fa-envelope"></i>
+              </span>
+              <div>
+                <span>Message</span>
+                <p class="text">info@journeycraft.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of contact section -->
+
+    <!-- review section starts  -->
+
+    <section
+      class="review"
+      id="review"
+      style="padding: 20px; max-width: 1200px; margin: auto"
+    >
+      <h2
+        class="lg-title"
+        style="text-align: center; font-size: 24px; margin-bottom: 20px"
+      >
+        REVIEW
+      </h2>
+
+      <div
+        class="review-container"
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+        "
+      >
+        <div
+          class="box"
+          style="
+            flex: 1;
+            min-width: 300px;
+            max-width: 350px;
+            background-color: #ffd1dc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          "
+        >
+          <h3 style="font-size: 20px; margin-bottom: 10px">Lavanya Naik</h3>
+          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 15px">
+            This website made planning my trip so simple. The itinerary builder
+            suggested amazing places I’d never heard of, and booking flights and
+            hotels was a breeze. Everything was organized in one place, saving
+            me so much time. It’s now my go-to travel planning tool. Highly
+            recommend it!
+          </p>
+          <div class="stars" style="display: flex; gap: 5px; color: gold">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div
+          class="box"
+          style="
+            flex: 1;
+            min-width: 300px;
+            max-width: 350px;
+            background-color: #d1ffd1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          "
+        >
+          <h3 style="font-size: 20px; margin-bottom: 10px">Sandhya G</h3>
+          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 15px">
+            This site made booking my entire vacation quick and easy. The
+            interactive map and group planning features were my favorites. It
+            also included reviews and tips from other travelers, which were
+            super helpful. Definitely one of the best platforms I’ve used for
+            organizing trips!
+          </p>
+          <div class="stars" style="display: flex; gap: 5px; color: gold">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div
+          class="box"
+          style="
+            flex: 1;
+            min-width: 300px;
+            max-width: 350px;
+            background-color: #d1e0ff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          "
+        >
+          <h3 style="font-size: 20px; margin-bottom: 10px">Manoj Kumar</h3>
+          <p style="font-size: 14px; line-height: 1.6; margin-bottom: 15px">
+            This website is ideal for anyone who loves to travel but hates the
+            hassle of planning. The layout is user-friendly, and I found so many
+            great deals on accommodations and activities. It’s great for both
+            short trips and detailed itineraries. I’ll be using this again for
+            sure.
+          </p>
+          <div class="stars" style="display: flex; gap: 5px; color: gold">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="py-4">
+      <div class="container footer-row">
+        <div class="footer-item">
+          <a href="index.html" class="site-brand">
+            Journey<span>Craft</span>
+          </a>
+          <p class="text">
+            JourneyCraft is your ultimate travel companion, offering curated
+            trips, personalized itineraries, and seamless booking experiences.
+            Explore stunning destinations, immerse in local cultures, and embark
+            on unforgettable journeys with ease and confidence.
+          </p>
+        </div>
+
+        <div class="footer-item">
+          <h2>Follow us on:</h2>
+          <ul class="social-links">
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-pinterest"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-google-plus"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- review section ends -->
+
+        <div class="footer-item">
+          <h2>Popular Places:</h2>
+          <ul>
+            <li><a href="#">Goa</a></li>
+            <li><a href="#">Ooty</a></li>
+            <li><a href="#">Manali</a></li>
+            <li><a href="#">Delhi</a></li>
+            <li><a href="#">Jaipur</a></li>
+          </ul>
+        </div>
+
+        <div class="subscribe-form footer-item">
+          <h2>Subscribe for Newsletter!</h2>
+          <form class="flex">
+            <input
+              type="email"
+              placeholder="Enter Email"
+              class="form-control"
+            />
+            <input type="submit" class="btn" value="Subscribe" />
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- js -->
+    <script src="js/script.js"></script>
+    <script></script>
+  </body>
+</html>

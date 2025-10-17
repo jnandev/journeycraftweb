@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Journey Craft</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fonts -->
+    <link rel="stylesheet" href="font/fonts.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- normalize css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/utility.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <style>
+      /* Custom styles for Services section */
+      .services {
+        padding: 4rem 0;
+        background-color: transparent; /* Remove background */
+      }
+
+      .services .title-wrap {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .services .box-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        gap: 2rem;
+      }
+
+      .services .box {
+        text-align: center;
+        padding: 2rem;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .services .box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      .services .box i {
+        font-size: 4rem; /* Increase icon size */
+        color: #007bff;
+        margin-bottom: 1rem;
+      }
+
+      .services .box h3 {
+        font-size: 1.8rem; /* Increase title size */
+        color: #333;
+        margin-bottom: 1rem;
+      }
+
+      .services .box p {
+        font-size: 1.2rem; /* Increase text size */
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar  -->
+    <nav class="navbar">
+      <div class="container flex">
+        <a href="index.html" class="site-brand"> Journey<span>Craft</span> </a>
+
+        <button type="button" id="navbar-show-btn" class="flex">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div id="navbar-collapse">
+          <button type="button" id="navbar-close-btn" class="flex">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="packages.html" class="nav-link">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a href="book.html" class="nav-link">Book</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar  -->
+
+    <!-- header -->
+    <header class="flex header-sm">
+      <div class="container">
+        <div class="header-title">
+          <h1>Itineraries</h1>
+          <p>
+            Effortlessly organize your trip with personalized itineraries. Make
+            every moment count with Journey Craft!
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <div class="container-fluid py-5">
+      <div class="container pt-5 pb-3">
+        <div class="row">
+          <!-- Package 1 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="package-item bg-white mb-2">
+              <img class="img-fluid" src="images/goapackage-1.jpg" alt="" />
+              <div class="p-4">
+                <div class="d-flex justify-content-between mb-3">
+                  <small
+                    ><i class="fa fa-map-marker-alt text-primary mr-2"></i>Hill
+                    Station Bliss</small
+                  >
+                  <small
+                    ><i class="fa fa-calendar-alt text-primary mr-2"></i>2
+                    days</small
+                  >
+                  <small
+                    ><i class="fa fa-user text-primary mr-2"></i>1 Person</small
+                  >
+                </div>
+                <a class="h5 text-decoration-none" href="#"
+                  >Revel in Ooty’s cool weather and scenic spots, making it the
+                  perfect destination for a relaxing getaway.</a
+                >
+                <div class="border-top mt-4 pt-4">
+                  <div class="d-flex justify-content-between">
+                    <h6>
+                      <i class="fa fa-star text-primary mr-2"></i>4.4
+                      <small>(190)</small>
+                    </h6>
+                    <h5>₹4,000</h5>
+                  </div>
+                  <button
+                    class="btn"
+                    onclick="window.location.href='ootypackage1.html'"
+                  >
+                    See Travel Plan
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Package 2 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="package-item bg-white mb-2">
+              <img class="img-fluid" src="images/goapackage-2.jpg" alt="" />
+              <div class="p-4">
+                <div class="d-flex justify-content-between mb-3">
+                  <small
+                    ><i class="fa fa-map-marker-alt text-primary mr-2"></i>Tea
+                    and Trails</small
+                  >
+                  <small
+                    ><i class="fa fa-calendar-alt text-primary mr-2"></i>3
+                    days</small
+                  >
+                  <small
+                    ><i class="fa fa-user text-primary mr-2"></i>1 Person</small
+                  >
+                </div>
+                <a class="h5 text-decoration-none" href="#"
+                  >Delight in Ooty’s aromatic tea plantations and thrilling
+                  trails, ideal for nature and adventure enthusiasts.</a
+                >
+                <div class="border-top mt-4 pt-4">
+                  <div class="d-flex justify-content-between">
+                    <h6>
+                      <i class="fa fa-star text-primary mr-2"></i>4.5
+                      <small>(230)</small>
+                    </h6>
+                    <h5>₹6,500</h5>
+                  </div>
+                  <!-- <input
+                    type="button"
+                    class="btn mt-2"
+                    value="See Travel Plan"
+                    onclick="window.open('file:///C:/Users/rowee/Downloads/tripboss_travelagency_site_html_css_js-master/tripboss_travelagency_site_html_css_js-master/ootypackage2.html')"
+                  /> -->
+                  <button
+                    class="btn"
+                    onclick="window.location.href='ootypackage2.html'"
+                  >
+                    See Travel Plan
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Package 3 -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="package-item bg-white mb-2">
+              <img class="img-fluid" src="images/goapackage-3.jpg" alt="" />
+              <div class="p-4">
+                <div class="d-flex justify-content-between mb-3">
+                  <small
+                    ><i class="fa fa-map-marker-alt text-primary mr-2"></i
+                    >Family Adventure</small
+                  >
+                  <small
+                    ><i class="fa fa-calendar-alt text-primary mr-2"></i>4
+                    days</small
+                  >
+                  <small
+                    ><i class="fa fa-user text-primary mr-2"></i>1 Person</small
+                  >
+                </div>
+                <a class="h5 text-decoration-none" href="#"
+                  >Create memorable moments with your family while exploring
+                  Ooty’s unique attractions and tranquil landscapes.</a
+                >
+                <div class="border-top mt-4 pt-4">
+                  <div class="d-flex justify-content-between">
+                    <h6>
+                      <i class="fa fa-star text-primary mr-2"></i>4.6
+                      <small>(270)</small>
+                    </h6>
+                    <h5>₹7,000</h5>
+                  </div>
+                  <!-- <input
+                    type="button"
+                    class="btn mt-2"
+                    value="See Travel Plan"
+                    onclick="window.open('file:///C:/Users/rowee/Downloads/tripboss_travelagency_site_html_css_js-master/tripboss_travelagency_site_html_css_js-master/ootypackage3.html')"
+                  /> -->
+                  <button
+                    class="btn"
+                    onclick="window.location.href='ootypackage3.html'"
+                  >
+                    See Travel Plan
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services section starts  -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="box-container">
+          <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>Affordable Hotels</h3>
+            <p>
+              Enjoy comfort and quality on a budget with our selection of
+              affordable hotels, offering great service and essential amenities
+              for a perfect stay.
+            </p>
+          </div>
+          <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>Food and Drinks</h3>
+            <p>
+              Indulge in local delicacies and refreshing drinks with our top
+              recommendations. Discover flavors that make every meal an
+              adventure!
+            </p>
+          </div>
+          <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Safety Guide</h3>
+            <p>
+              Travel smart with our safety tips and guidelines. Stay informed,
+              prepared, and secure throughout your journey!
+            </p>
+          </div>
+          <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>Around India</h3>
+            <p>
+              Discover the vibrant cultures, breathtaking landscapes, and rich
+              heritage of India. Your guide to exploring this incredible land!
+            </p>
+          </div>
+          <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>Fastest Travel</h3>
+            <p>
+              Reach your destination quickly with our curated fast travel
+              options. Save time and explore more on your journey!
+            </p>
+          </div>
+          <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>Adventures</h3>
+            <p>
+              Embark on thrilling adventures and unforgettable experiences.
+              Discover activities that fuel your passion for excitement and
+              exploration!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services section ends -->
+
+    <!-- footer -->
+    <footer class="py-4">
+      <div class="container footer-row">
+        <div class="footer-item">
+          <a href="index.html" class="site-brand">
+            Journey<span>Craft</span>
+          </a>
+          <p class="text">
+            JourneyCraft is your ultimate travel companion, offering curated
+            trips, personalized itineraries, and seamless booking experiences.
+            Explore stunning destinations, immerse in local cultures, and embark
+            on unforgettable journeys with ease and confidence.
+          </p>
+        </div>
+
+        <div class="footer-item">
+          <h2>Follow us on:</h2>
+          <ul class="social-links">
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-pinterest"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-google-plus"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h2>Popular Places:</h2>
+          <ul>
+            <li><a href="#">Goa</a></li>
+            <li><a href="#">Ooty</a></li>
+            <li><a href="#">Manali</a></li>
+            <li><a href="#">Delhi</a></li>
+            <li><a href="#">Jaipur</a></li>
+          </ul>
+        </div>
+
+        <div class="subscribe-form footer-item">
+          <h2>Subscribe for Newsletter!</h2>
+          <form class="flex">
+            <input
+              type="email"
+              placeholder="Enter Email"
+              class="form-control"
+            />
+            <input type="submit" class="btn" value="Subscribe" />
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
